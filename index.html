@@ -1,0 +1,61 @@
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" >
+</head>
+<body>
+
+<style type="text/css">
+
+*{
+margin:0;
+padding:0;
+border:0;
+}
+.data{
+height:70%;
+width:90%;
+margin:auto;
+margin-top:30px;
+}
+form {
+width:80%;
+height:50px;
+position:absolute;
+bottom:10px;
+border:1px solid black;
+border-radius:5px;
+left:50%;
+transform:translateX(-50%);
+}
+iframe {
+width:100%;
+height:100%;
+}
+textarea {
+height:100%;
+width:80%;
+padding-left:5px;
+font-size:15px;
+border-radius:5px 0 0 5px;
+padding-top:2px;
+}
+input {
+width:20%;
+height:100%;
+position:absolute;
+border-radius:0 5px 5px 0;
+font-size:15px;
+background:gold;
+color:black;
+}
+
+</style>
+
+<div class="data"><iframe src="db.html" ></iframe></div>
+<form method="post" action="connect.php" >
+<textarea name="msg" placeholder="Type your message..." id="txt" ></textarea>
+<input type="submit" name="btn" value="Send" id="btn_send" >
+</form>
+</body>
+</html>
